@@ -1,5 +1,7 @@
+
 {
-  "name": "e-ngenieria - Consultora MercadoLibre y Amazon",
-  "description": "Consultora formada por ingenieros, especializada en impulsar tu negocio on-line en MercadoLibre y Amazon a través de estrategias de optimización, publicidad y Business Intelligence.",
-  "requestFramePermissions": []
+  "name": "e-ngenieria - Soluciones de e-commerce",
+  "description": "Una recreación moderna y tecnológica de la página de e-ngenieria, consultores especializados en e-commerce, MercadoLibre, y ventas con Inteligencia Artificial.",
+  "requestFramePermissions": [],
+  "prompt": ""
 }

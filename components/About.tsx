@@ -1,47 +1,37 @@
 
 import React from 'react';
-import { UserCircle } from 'lucide-react';
+import { Target, Eye, Gem } from 'lucide-react';
 
-const teamMembers = [
-    {
-        name: 'Brenda Rodriguez',
-        role: 'Consultora Certificada MercadoLibre',
-        bio: 'Técnica electromecánica y en comercio exterior. Consultora certificada por MercadoLibre para Argentina y Latinoamérica, con experiencia en e-commerce, asesoramiento en procesos comerciales, investigación de mercado y comercialización.',
-    },
-    {
-        name: 'Eugenio Gonzalez Alba',
-        role: 'Consultor Certificado MercadoLibre',
-        bio: 'Ingeniero Mecánico, posgraduado en Psicología. Perito Judicial, Docente y también consultor certificado por MercadoLibre. Experto en ventas, posventa y gestión gerencial en industrias nacionales y multinacionales.',
-    }
-];
-
-const TeamCard: React.FC<{ name: string, role: string, bio: string }> = ({ name, role, bio }) => (
-    <div className="bg-gray-800/50 p-8 rounded-xl shadow-lg hover:shadow-cyan-400/20 transform hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm border border-gray-700 text-center h-full flex flex-col">
-        <div className="relative w-24 h-24 mx-auto mb-4">
-             <div className="w-full h-full rounded-full bg-gray-700 flex items-center justify-center">
-                <UserCircle className="w-16 h-16 text-cyan-400" />
-            </div>
+const Card: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
+    <div className="bg-[#333333] p-8 rounded-xl shadow-lg hover:shadow-[#FFE600]/20 transform hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm border border-gray-700">
+        <div className="flex items-center justify-center w-16 h-16 bg-[#FFE600]/20 text-[#FFE600] rounded-full mb-6">
+            {icon}
         </div>
-        <h3 className="text-xl font-bold font-orbitron text-white">{name}</h3>
-        <p className="text-cyan-400 font-semibold text-sm mb-4">{role}</p>
-        <p className="text-gray-400 text-sm flex-grow">{bio}</p>
+        <h3 className="text-2xl font-bold text-white mb-4">{title}</h3>
+        <p className="text-gray-400">{children}</p>
     </div>
 );
 
 
 const About: React.FC = () => {
     return (
-        <section id="quienes-somos" className="py-20 md:py-32 bg-gray-900">
+        <section id="nosotros" className="py-20 md:py-32 bg-[#18181B]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                     <h2 className="text-3xl md:text-4xl font-extrabold font-orbitron text-white">Quiénes <span className="text-cyan-400">Somos</span></h2>
-                    <p className="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">Un equipo de ingenieros y especialistas dedicados a transformar tu presencia digital y potenciar tus ventas.</p>
+                     <h2 className="text-3xl md:text-4xl font-extrabold text-white">Sobre <span className="text-[#FFE600]">Nosotros</span></h2>
+                    <p className="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">Nuestro compromiso es ofrecer servicios de consultoría en ingeniería con los más altos estándares de calidad, seguridad y eficiencia.</p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-                   {teamMembers.map(member => (
-                       <TeamCard key={member.name} {...member} />
-                   ))}
+                <div className="grid md:grid-cols-3 gap-10">
+                   <Card icon={<Target size={32} />} title="Misión">
+                        Proveer soluciones de ingeniería innovadoras y de alta calidad que superen las expectativas de nuestros clientes, contribuyendo al desarrollo sostenible de la sociedad y garantizando la seguridad y eficiencia en cada proyecto.
+                    </Card>
+                     <Card icon={<Eye size={32} />} title="Visión">
+                        Ser la empresa de consultoría en ingeniería de referencia a nivel nacional e internacional, reconocida por nuestra excelencia técnica, nuestro compromiso con la innovación y nuestra capacidad para afrontar los desafíos más complejos.
+                    </Card>
+                     <Card icon={<Gem size={32} />} title="Valores">
+                        Compromiso, Calidad, Integridad, Innovación y Seguridad. Estos pilares guían cada una de nuestras acciones y decisiones, asegurando relaciones duraderas y de confianza con nuestros clientes y colaboradores.
+                    </Card>
                 </div>
             </div>
         </section>
