@@ -36,7 +36,8 @@ const Contact: React.FC = () => {
                             </div>
                             <div>
                                 <h3 className="text-lg font-semibold text-white">Dirección</h3>
-                                <p className="text-gray-400">Av. Siempre Viva 742, Springfield</p>
+                                <p className="text-gray-400">Gral. Urquiza 774, C1221 Cdad. Autónoma de Buenos Aires</p>
+                                <p className="text-gray-400">Cordoba Martel de los Rios 4250 Villa Marta Cordoba</p>
                             </div>
                         </div>
                         <div className="flex items-start space-x-4">
@@ -45,7 +46,7 @@ const Contact: React.FC = () => {
                             </div>
                             <div>
                                 <h3 className="text-lg font-semibold text-white">Teléfono</h3>
-                                <p className="text-gray-400">+54 (11) 1234-5678</p>
+                                <p className="text-gray-400">+54 (3513) 771199</p>
                             </div>
                         </div>
                         <div className="flex items-start space-x-4">
@@ -54,7 +55,7 @@ const Contact: React.FC = () => {
                             </div>
                             <div>
                                 <h3 className="text-lg font-semibold text-white">Email</h3>
-                                <p className="text-gray-400">contacto@e-ngenieria.com</p>
+                                <p className="text-gray-400">consultas@e-ngenieria.com</p>
                             </div>
                         </div>
                     </div>

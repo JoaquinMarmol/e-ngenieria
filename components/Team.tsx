@@ -6,13 +6,13 @@ const teamData = [
     {
         name: 'Brenda Rodriguez',
         description: 'Técnica electromecánica y en comercio exterior. Consultora certificada por MercadoLibre para Argentina y Latinoamérica, con experiencia en e-commerce y asesoramiento en procesos comerciales en distintos rubros. Investigación de mercado y comercialización.',
-        image: 'https://picsum.photos/seed/brenda/400/400',
+        image: 'brenda.png',
         linkedin: '#'
     },
     {
         name: 'Eugenio Gonzalez Alba',
         description: 'Ingeniero Mecánico, posgraduado en Psicología, Perito Judicial, y consultor certificado por MercadoLibre. Docente con experiencia en comercio online y gestión gerencial de Posventa en industrias Nacionales y Multinacionales.',
-        image: 'https://picsum.photos/seed/eugenio/400/400',
+        image: 'eugenio.png',
         linkedin: '#'
     }
 ];

@@ -66,11 +66,11 @@ const Services: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-16 items-center">
                         <div>
                             <h3 className="text-3xl md:text-4xl font-extrabold text-white">
-                                <span className="text-[#FFE600]">Smart Seller Pro</span> 🤖✨
+                                <span className="text-[#FFE600]">Smart Seller Pro</span>
                             </h3>
                             <p className="mt-4 text-lg text-gray-300">
                                 ¡Es hora de sumarte al futuro de las ventas con la Inteligencia Artificial de e-ngenieria!
-                                Imagina esto: Llegar directo a esos clientes de nicho que realmente te interesan, con una alta intención de compra, ¡sin desperdiciar un peso! 🎯💰
+                                Imagina esto: Llegar directo a esos clientes de nicho que realmente te interesan, con una alta intención de compra, ¡sin desperdiciar un peso!
                             </p>
                              <div className="mt-8 space-y-4">
                                 <div className="flex items-start">
@@ -95,7 +95,7 @@ const Services: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
-                            <p className="mt-6 text-gray-300 font-semibold">¡Es momento de vender de forma inteligente, no más duro! 💪</p>
+                            <p className="mt-6 text-gray-300 font-semibold">¡Es momento de vender de forma inteligente, no más duro!</p>
                         </div>
                         <div className="bg-[#333333] rounded-lg aspect-video flex items-center justify-center p-8 border border-gray-700">
                             <div className="text-center">

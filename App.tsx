@@ -8,10 +8,12 @@ import Projects from './components/Projects';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ConsultingPopup from './components/ConsultingPopup';
 
 const App: React.FC = () => {
     const [activeSection, setActiveSection] = useState<string>('inicio');
     const [isScrolled, setIsScrolled] = useState<boolean>(false);
+    const [isPopupOpen, setIsPopupOpen] = useState(true);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,6 +32,15 @@ const App: React.FC = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+    
+    useEffect(() => {
+        if (isPopupOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [isPopupOpen]);
+
 
     return (
         <div className="bg-[#18181B] min-h-screen text-gray-200">
@@ -43,6 +54,7 @@ const App: React.FC = () => {
                 <Contact />
             </main>
             <Footer />
+            <ConsultingPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
         </div>
     );
 };

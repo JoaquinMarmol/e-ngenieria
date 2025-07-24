@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                  <div className="mt-8 text-center text-sm text-gray-500">
-                    <p>Re-imaginado y construido por un ingeniero de IA.</p>
+                    <p>Desarrollado por Testify.</p>
                 </div>
             </div>
         </footer>
