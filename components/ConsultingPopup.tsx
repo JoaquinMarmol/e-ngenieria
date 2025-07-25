@@ -52,24 +52,24 @@ const ConsultingPopup: React.FC<ConsultingPopupProps> = ({ isOpen, onClose }) =>
             <div
                 ref={popupRef}
                 tabIndex={-1}
-                className="relative bg-[#18181B] border-2 border-[#FFE600] rounded-lg shadow-2xl w-11/12 max-w-md mx-auto overflow-hidden text-gray-200 animate-fade-in-up p-8 text-center"
+                className="relative bg-white border-2 border-[#FFE600] rounded-lg shadow-2xl w-11/12 max-w-md mx-auto overflow-hidden text-gray-200 animate-fade-in-up p-8 text-center"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button
                     onClick={onClose}
-                    className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+                    className="absolute top-4 right-4 text-gray-400 hover:text-black transition-colors"
                     aria-label="Cerrar popup"
                 >
                     <X className="h-6 w-6" />
                 </button>
                 
-                <div className="flex justify-center mb-4">
+                <div className="flex justify-center mb-4 w-36 h-36 mx-auto">
                    <img src="mercadolibre.svg" alt="" />
                 </div>
                 
                 <h2 id="popup-title" className="text-2xl font-bold text-[#FFE600] mb-2"> ¡PEDI TU CONSULTORIA EXPRESS GRATUITA! </h2>
                 <p className="text-gray-300 mb-6">
-                    <span className="font-bold text-white"> No pierdas tiempo y mejorá tus ventas hoy</span>
+                    <span className="font-bold text-black"> No pierdas tiempo y mejorá tus ventas hoy</span>
                 </p>
                 <button 
                     onClick={handleContactClick}
