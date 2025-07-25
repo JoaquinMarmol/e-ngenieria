@@ -3,12 +3,12 @@ import React from 'react';
 import { Target, Eye, Gem } from 'lucide-react';
 
 const Card: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
-    <div className="bg-[#333333] p-8 rounded-xl shadow-lg hover:shadow-[#FFE600]/20 transform hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm border border-gray-700">
+    <div className="bg-[#333333] flex items-center flex-col justify-center p-8 rounded-xl shadow-lg hover:shadow-[#FFE600]/20 transform hover:-translate-y-2 transition-all duration-300 backdrop-blur-sm border border-gray-700">
         <div className="flex items-center justify-center w-16 h-16 bg-[#FFE600]/20 text-[#FFE600] rounded-full mb-6">
             {icon}
         </div>
         <h3 className="text-2xl font-bold text-white mb-4">{title}</h3>
-        <p className="text-gray-400">{children}</p>
+        <p className="text-gray-400 text-center">{children}</p>
     </div>
 );
 
