@@ -22,8 +22,8 @@ const Sponsors: React.FC = () => {
   return (
     <section className="py-16 md:py-20 bg-[#27272A]/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-2xl font-bold text-gray-400 mb-12 tracking-wider uppercase">
-          Confían en Nosotros
+        <h2 className="text-center text-2xl font-bold text-[#FFE600] mb-12 tracking-wider uppercase">
+          <span className="text-white">Confían en</span> Nosotros
         </h2>
         <div className="relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_10%,_black_90%,transparent_100%)]">
             <div className="flex">
