@@ -6,6 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 //import Projects from './components/Projects';
 import Team from './components/Team';
+import Sponsors from './components/Sponsors';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ConsultingPopup from './components/ConsultingPopup';
@@ -51,6 +52,7 @@ const App: React.FC = () => {
                 <Services />
                 {/* <Projects /> */}
                 <Team />
+                <Sponsors />
                 <Contact />
             </main>
             <Footer />
